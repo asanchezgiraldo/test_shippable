@@ -1,7 +1,7 @@
 #!/bin/bash
 COUNTER=0
 
-until(curl --fail homes-site.test.bxm.net.au/version); do 
+until(curl --fail $URL/version); do 
 	echo "Pinging Homes Version Page...\n";
 	sleep 5;
 	COUNTER=$(( $COUNTER + 5));
