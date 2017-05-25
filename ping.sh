@@ -6,7 +6,7 @@ until(curl --fail homes-sitea.test.bxm.net.au/version); do
 	sleep 5;
 	COUNTER=$(( $COUNTER + 5));
 	echo $COUNTER;
-	if [ $COUNTER == 10 ]; then
+	if [ "$COUNTER"==10 ]; then
 		echo "Could not ping" >&2
   		exit 1
 	fi
