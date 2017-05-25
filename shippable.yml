@@ -3,6 +3,10 @@ build_environment: Ubuntu 12.04
 language: node_js
 node_js: "6.1.0"
 
+env:
+  global:
+    - URL=homes-site.test.bxm.net.au
+    
 build:
   ci:
     - sh ping.sh
