@@ -3,7 +3,7 @@ resources:
   # Github repo
   - name: test-repo
     type: gitRepo
-    integration: github
+    integration: gitHub
     pointer:
       sourceName: asanchezgiraldo/test_shippable
       branch: master
