@@ -1,0 +1,9 @@
+resources:
+
+  # Github repo
+  - name: test-repo
+    type: gitRepo
+    integration: github
+    pointer:
+      sourceName: asanchezgiraldo/test_shippable
+      branch: master
