@@ -4,7 +4,10 @@ jobs:
   - name: testing-something
     type: runSh
     steps:
-     - TASK:
+      - IN: test-repo
+      - TASK:
         - script: echo $BUILD_ID
         - script: echo $BUILD_NUMBER
-        - script: until(curl --fail homes-site.test.bxm.net.au/version); do echo "Pinging Homes Version Page..."; sleep 5; done
+        - script: export URL=homes-site.test.bxm.net.au
+        - script: cd ./IN/homes-site-repo/gitRepo/
+        - script: sh ping.sh
