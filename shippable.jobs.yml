@@ -10,6 +10,6 @@ jobs:
       - TASK:
         - script: echo $BUILD_ID
         - script: echo $BUILD_NUMBER
-        - script: export URL=homes-site.test.bxm.net.au
+        - script: export URL=home-site.test.bxm.net.au
         - script: cd ./IN/test-repo/gitRepo/
         - script: sh ping.sh
