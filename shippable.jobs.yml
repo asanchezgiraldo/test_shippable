@@ -1,0 +1,10 @@
+jobs:
+
+  # 1. Test
+  - name: testing-something
+    type: runSh
+    steps:
+     - TASK:
+        - script: echo $BUILD_ID
+        - script: echo $BUILD_NUMBER
+        - script: until(curl --fail homes-site.test.bxm.net.au/version); do echo "Pinging Homes Version Page..."; sleep 5; done
