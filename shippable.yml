@@ -9,4 +9,10 @@ env:
     
 build:
   ci:
+    - export DISPLAY=:99.0
+    - export LIGHTHOUSE_CHROMIUM_PATH="$(pwd)/chrome-linux/chrome"
+    - sh -e /etc/init.d/xvfb start
+    - curl -L https://raw.githubusercontent.com/GoogleChrome/lighthouse/v2.1.0/lighthouse-core/scripts/download-chrome.sh | bash
+    - google-chrome --product-version
     - sh ping.sh
+    - chrome --headless --disable-gpu --screenshot https://www.chromestatus.com/
