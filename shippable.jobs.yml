@@ -10,6 +10,11 @@ jobs:
       - TASK:
         - script: echo $BUILD_ID
         - script: echo $BUILD_NUMBER
+        - script: export DISPLAY=:99.0
+        - script: export LIGHTHOUSE_CHROMIUM_PATH="$(pwd)/chrome-linux/chrome"
+        - script: sh -e /etc/init.d/xvfb start
+        - script: curl -L https://raw.githubusercontent.com/GoogleChrome/lighthouse/v2.1.0/lighthouse-core/scripts/download-chrome.sh | bash
+        - script: google-chrome --product-version
         - script: export URL=home-site.test.bxm.net.au
         - script: cd ./IN/test-repo/gitRepo/
         - script: sh ping.sh
