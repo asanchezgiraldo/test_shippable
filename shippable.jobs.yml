@@ -11,6 +11,7 @@ jobs:
         - script: echo $BUILD_NUMBER
         - script: export URL=homes-site.test.bxm.net.au
         - script: cd ./IN/test-repo/gitRepo/
+        - sript: ls -l
         - script: sh setup.sh
         - script: npm install
         - script: npm test
