@@ -4,15 +4,10 @@ build_environment: Ubuntu 12.04
 env:
   - URL=homes-site.test.bxm.net.au
   - URL=now-site.test.bxm.net.au
-  - URL=cosmo-site.test.bxm.net.au
 matrix:
   include:
     - URL=homes-site.test.bxm.net.au
     
 build:
   ci:
-    - wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-    - sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
-    - sudo apt-get update
-    - sudo apt-get install google-chrome-stable
     - sh ping.sh
