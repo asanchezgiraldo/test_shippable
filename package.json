@@ -4,7 +4,7 @@
   "description": "Testing shippable",
   "main": "index.js",
   "scripts": {
-    "test": "node ./node_modules/chimp/bin/chimp.js features/support/chimp.js --debug"
+    "test": "node ./node_modules/chimp/bin/chimp.js features/support/chimp.js --browser=firefox --debug"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/asanchezgiraldo/test_shippable#readme",
   "devDependencies": {
-    "chimp": "0.41.2"
+    "chimp": "0.45.1"
   }
 }
