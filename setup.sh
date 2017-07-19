@@ -1,11 +1,23 @@
 #!/bin/bash
+
+# Install nvm and node version
 curl https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh | bash
 source ~/.nvm/nvm.sh
 nvm install "6.1.0"
 nvm use "6.1.0"
+
+
+# Add Google Chrome's repo to sources.list
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
-sudo apt-get update
-sudo apt-get install google-chrome-stable
-apt-get install xvfb
+
+# Install Google Chrome:
+sudo apt-get -y install libxpm4 libxrender1 libgtk2.0-0 libnss3 libgconf-2-4
+sudo apt-get -y install google-chrome-stable
+
+
+# Dependencies to make "headless" chrome/selenium work:
+sudo apt-get -y install xvfb gtk2-engines-pixbuf
+sudo apt-get -y install xfonts-cyrillic xfonts-100dpi xfonts-75dpi xfonts-base xfonts-scalable
+
 google-chrome --product-version
