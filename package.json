@@ -1,0 +1,25 @@
+{
+  "name": "test_shippable",
+  "version": "1.0.0",
+  "description": "Testing shippable",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/chimp/bin/chimp.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asanchezgiraldo/test_shippable.git"
+  },
+  "keywords": [
+    "shippable"
+  ],
+  "author": "alejandro sanchez giraldo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/asanchezgiraldo/test_shippable/issues"
+  },
+  "homepage": "https://github.com/asanchezgiraldo/test_shippable#readme",
+  "devDependencies": {
+    "chimp": "^0.49.1"
+  }
+}
