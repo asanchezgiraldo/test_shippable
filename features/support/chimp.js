@@ -2,11 +2,10 @@ module.exports = {
     webdriverio: {
         desiredCapabilities: {
             chromeOptions: {
-                args: ["--enable-automation", "headless", "disable-gpu"]
+                args: ["enable-automation", "headless", "disable-gpu", "disable-extensions"]
             }
         }
     },
-
 
     // - - - - SELENIUM-STANDALONE
     seleniumStandaloneOptions: {
@@ -18,7 +17,7 @@ module.exports = {
             chrome: {
                 // check for more recent versions of chrome driver here:
                 // http://chromedriver.storage.googleapis.com/index.html
-                version: '2.29',
+                version: '2.30',
                 arch: process.arch,
                 baseURL: 'https://chromedriver.storage.googleapis.com'
             }
