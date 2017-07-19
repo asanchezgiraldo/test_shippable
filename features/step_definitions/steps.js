@@ -1,6 +1,7 @@
 module.exports = function() {
     this.Given(/^I visit "([^"]*)"$/, function (uri) {
         browser.url(uri);
+        browser.setViewportSize({ width: 320, height: 568 })
     });
 
     this.When(/^I search for "([^"]*)"$/, function (arg1) {
