@@ -8,4 +8,5 @@ sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /et
 sudo apt-get update
 sudo apt-get install google-chrome-stable
 apt-get install xvfb
+sudo apt-get install ruby-full
 google-chrome --product-version

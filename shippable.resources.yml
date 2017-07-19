@@ -7,3 +7,9 @@ resources:
     pointer:
       sourceName: asanchezgiraldo/test_shippable
       branch: master
+
+  - name: browser-stack-connect
+    type: params
+    version:
+      params:
+        secure: cyoDcO2N5XRFlmCupJbL6YIk5LVD92NHlI+Rjnd8q0cGNce7rN5cLKZmnoD3V/N7NBsD9l8UE3jnDxT+iQz41ifejjB52kT8sigl1dm5zRKmG0UmqrT4HduB1I8RAdXasteLz9dyD3IgrmbxTsyEyN+fgzSdDa76X63WQKBDUj3ZllAK4c37QWLk836NdGnU4MwP+oa7rpn8cAxBfqagSkE3AJyLwt1inrqRF9/Dp6/lxt0KrmiulpxyNUnlvIALj8SEQo1E0n2sKHyChVMAgpA+xaGHFAZtBLDvbP2/eEiHU4YeEoMwzQVz0FdAby5Bq0AzwapQhTqKRQ9fk5P6bg==

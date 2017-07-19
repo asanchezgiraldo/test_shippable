@@ -1,7 +1,6 @@
 jobs:
 
-  # 1. Test
-  - name: testing-something
+  - name: testing-something-chimp
     type: runSh
     steps:
       - IN: test-repo
@@ -12,3 +11,16 @@ jobs:
         - script: sh setup.sh
         - script: npm install
         - script: xvfb-run --server-args="-screen 0, 1920x1080x24" npm test
+
+  - name: testing-something-watir-browserstack
+    type: runSh
+    steps:
+      - IN: test-repo
+        switch: off
+      - IN: test_shippable_runCI
+      - IN: browser-stack-connect
+      - TASK:
+        - script: cd ./IN/test-repo/gitRepo/
+        - script: sh rb_setup.sh
+        - script: bundle install
+        - script:
