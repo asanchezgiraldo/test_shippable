@@ -4,7 +4,7 @@
   "description": "Testing shippable",
   "main": "index.js",
   "scripts": {
-    "test": "node ./node_modules/chimp/bin/chimp.js ./support/chimp.js"
+    "test": "node ./node_modules/chimp/bin/chimp.js features/support/chimp.js"
   },
   "repository": {
     "type": "git",

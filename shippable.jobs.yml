@@ -4,7 +4,6 @@ jobs:
   - name: testing-something
     type: runSh
     steps:
-      - IN: test-repo
       - IN: test_shippable_runCI
       - TASK:
         - script: echo $BUILD_ID
