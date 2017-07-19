@@ -21,6 +21,6 @@ jobs:
       - IN: browser-stack-connect
       - TASK:
         - script: cd ./IN/test-repo/gitRepo/
-        - script: sh rb_setup.sh
+#        - script: sh rb_setup.sh
         - script: bundle install
         - script: cucumber
