@@ -10,7 +10,7 @@ jobs:
         - script: cd ./IN/test-repo/gitRepo/
         - script: sh setup.sh
         - script: npm install
-        - script: npm test
+        - script: xvfb-run --server-args="-screen 0, 1920x1080x24" npm test
 
   - name: testing-something-watir-browserstack
     type: runSh
