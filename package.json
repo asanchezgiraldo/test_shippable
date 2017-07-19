@@ -4,7 +4,7 @@
   "description": "Testing shippable",
   "main": "index.js",
   "scripts": {
-    "test": "node ./node_modules/chimp/bin/chimp.js features/support/chimp.js --browser=firefox --debug"
+    "test": "DISPLAY=:99.0 node ./node_modules/chimp/bin/chimp.js features/support/chimp.js --debug"
   },
   "repository": {
     "type": "git",
