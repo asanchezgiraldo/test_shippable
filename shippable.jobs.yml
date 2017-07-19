@@ -22,5 +22,6 @@ jobs:
       - TASK:
         - script: cd ./IN/test-repo/gitRepo/
 #        - script: sh rb_setup.sh
+        - script: gem install bundle
         - script: bundle install
         - script: cucumber
