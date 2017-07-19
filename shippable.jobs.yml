@@ -5,7 +5,6 @@ jobs:
     type: runSh
     steps:
       - IN: test-repo
-        switch: off
       - IN: test_shippable_runCI
       - TASK:
         - script: echo $BUILD_ID
