@@ -4,9 +4,6 @@ build_environment: Ubuntu 12.04
 env:
   - URL=homes-site.test.bxm.net.au
   - URL=now-site.test.bxm.net.au
-matrix:
-  include:
-    - URL=homes-site.test.bxm.net.au
     
 build:
   ci:
