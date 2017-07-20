@@ -1,7 +1,11 @@
+var window_handler = require('../utils/window_handler');
+
+
 module.exports = function() {
     this.Given(/^I visit "([^"]*)"$/, function (uri) {
         browser.url(uri);
-        browser.setViewportSize({ width: 320, height: 568 })
+        var window = new window_handler();
+        window.windowResize("mobile portrait");
     });
 
     this.When(/^I search for "([^"]*)"$/, function (arg1) {
