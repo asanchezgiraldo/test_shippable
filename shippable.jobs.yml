@@ -15,9 +15,8 @@ jobs:
         - script: sh setup.sh
         - script: npm install
         - script: sleep 3.5s
-        - script: export DISPLAY=:99.0
-        - script: xvfb-run --server-args="-ac" npm test
-        - script: xvfb-run --server-args="-ac" npm run rerun
+        - script: npm test
+        - script: npm run rerun
 
   - name: testing-something-watir-browserstack
     type: runSh
