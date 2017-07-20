@@ -4,7 +4,7 @@
   "description": "Testing shippable",
   "main": "index.js",
   "scripts": {
-    "test": "DISPLAY=:99.0 node ./node_modules/chimp/bin/chimp.js features/support/chimp.js --debug"
+    "test": "DISPLAY=:99.0 node ./node_modules/chimp/bin/chimp.js features/support/chimp.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/asanchezgiraldo/test_shippable#readme",
   "devDependencies": {
-    "chimp": "0.45.1"
+    "chimp": "0.41.2"
   }
 }
