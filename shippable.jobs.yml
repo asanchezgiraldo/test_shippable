@@ -15,8 +15,9 @@ jobs:
         - script: sh setup.sh
         - script: npm install
         - script: sleep 3.5s
-        - script: xvfb-run --server-args="-screen 0, 1920x1080x24" npm test
-        - script: xvfb-run --server-args="-screen 0, 1920x1080x24" npm run rerun
+        - script: export DISPLAY=:99.0
+        - script: xvfb-run --server-args="-ac" npm test
+        - script: xvfb-run --server-args="-ac" npm run rerun
 
   - name: testing-something-watir-browserstack
     type: runSh
