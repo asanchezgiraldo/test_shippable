@@ -7,3 +7,5 @@ sudo apt-get update
 sudo apt-get install google-chrome-stable
 google-chrome --product-version
 
+# Dependencies to make "headless" chrome work:
+sudo apt-get install xvfb
