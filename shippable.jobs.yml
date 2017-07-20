@@ -1,33 +1,33 @@
-jobs:
-
-  - name: testing-something-chimp
-    type: runSh
-    steps:
-      - IN: test-repo
-        switch: off
-      - IN: test_shippable_runCI
-      - TASK:
-        - script: curl https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh | bash
-        - script: source ~/.nvm/nvm.sh
-        - script: nvm install "6.1.0"
-        - script: nvm use "6.1.0"
-        - script: cd ./IN/test-repo/gitRepo/
-        - script: sh setup.sh
-        - script: npm install
-        - script: sleep 3.5s
-        - script: xvfb-run --server-args="-screen 0, 1920x1080x24" npm test
-
-  - name: testing-something-watir-browserstack
-    type: runSh
-    steps:
-      - IN: test-repo
-        switch: off
-      - IN: test_shippable_runCI
-      - IN: browser-stack-connect
-      - TASK:
-        - script: cd ./IN/test-repo/gitRepo/
-        - script: sudo apt-get update
-        - script: sudo apt-get install ruby-full
-        - script: gem install bundle
-        - script: bundle install
-        - script: cucumber
+#jobs:
+#
+#  - name: testing-something-chimp
+#    type: runSh
+#    steps:
+#      - IN: test-repo
+#        switch: off
+#      - IN: test_shippable_runCI
+#      - TASK:
+#        - script: curl https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh | bash
+#        - script: source ~/.nvm/nvm.sh
+#        - script: nvm install "6.1.0"
+#        - script: nvm use "6.1.0"
+#        - script: cd ./IN/test-repo/gitRepo/
+#        - script: sh setup.sh
+#        - script: npm install
+#        - script: sleep 3.5s
+#        - script: xvfb-run --server-args="-screen 0, 1920x1080x24" npm test
+#
+#  - name: testing-something-watir-browserstack
+#    type: runSh
+#    steps:
+#      - IN: test-repo
+#        switch: off
+#      - IN: test_shippable_runCI
+#      - IN: browser-stack-connect
+#      - TASK:
+#        - script: cd ./IN/test-repo/gitRepo/
+#        - script: sudo apt-get update
+#        - script: sudo apt-get install ruby-full
+#        - script: gem install bundle
+#        - script: bundle install
+#        - script: cucumber
