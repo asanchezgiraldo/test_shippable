@@ -1,4 +1,4 @@
-var window_handler = require('../utils/window_handler');
+var window_handler = require('./utils/window_handler');
 
 
 module.exports = function() {

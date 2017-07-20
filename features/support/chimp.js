@@ -2,7 +2,7 @@ module.exports = {
     webdriverio: {
         desiredCapabilities: {
             chromeOptions: {
-                args: ["enable-automation", 'disable-gpu', 'no-sandbox']
+                args: ["enable-automation"]
             }
         }
     },
