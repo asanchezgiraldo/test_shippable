@@ -26,6 +26,7 @@ jobs:
       - IN: browser-stack-connect
       - TASK:
         - script: cd ./IN/test-repo/gitRepo/
+        - script: sudo apt-get update
         - script: sudo apt-get install ruby-full
         - script: gem install bundle
         - script: bundle install
