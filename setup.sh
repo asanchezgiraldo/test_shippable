@@ -8,7 +8,4 @@ sudo apt-get install google-chrome-stable
 google-chrome --product-version
 
 # Dependencies to make "headless" chrome work:
-sudo apt-get -y install xvfb gtk2-engines-pixbuf
-sudo apt-get -y install xfonts-cyrillic xfonts-100dpi xfonts-75dpi xfonts-base xfonts-scalable
-
-google-chrome --product-version
+sudo apt-get install xvfb
