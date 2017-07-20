@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/asanchezgiraldo/test_shippable#readme",
   "devDependencies": {
-    "chimp": "0.41.2"
+    "chimp": "0.45.1"
   }
 }
